@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    
+<!-- Mirrored from event-theme.com/themes/html/vetrov/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Mar 2018 12:42:51 GMT -->
+<head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <title>Tounesna</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/b_assets/ico/favicon.ico">
+
+        <!-- Minified CSS --> 
+        <link href="/assets/b_assets/css/style_min.css" rel="stylesheet" type="text/css"> 
+
+        <!-- Color CSS --> 
+        <link href="/assets/b_assets/css/multicolors/theme-color.css" rel="stylesheet" id="theme-config-link">
+
+        <!--[if lt IE 9]>
+        <script src="assets/js/plugin/html5shiv.js"></script>
+        <script src="assets/js/plugin/respond.js"></script>
+        <![endif]-->        
+    </head>
+
+    <body id="home" class="wide">
+        <!-- PRELOADER -->
+       
+        <!-- /PRELOADER -->
+
+        <!-- WRAPPER -->
+        <main class="wrapper"> 
+            <!-- CONTENT AREA -->
+            <article class="home-three">
+                <!-- Top Header-1 Start -->
+
+              <% include menu %>
+                
+                <!-- / Main Header-1 Ends -->  
+
+                <!-- Main-Banner-1 Start -->
+                <% if( success.length > 0) { %>
+                    <div class="alert alert-success"><p><%= success %></p></div>
+               
+                    <% } %>
+                <div class="main-banner-1">
+                   
+                            
+                            <video autoplay muted loop id="myVideo">
+                                    <source src="/assets/b_assets/videos/videoxx.mp4" type="video/mp4">
+                                  </video>
+                       
+                    <div class="search-wrap">
+                        <div class="container">
+                            <div class="tab-content">
+                                    <h1 style="color:white; position: absolute;
+                                    visibility: visible;
+                                    left: 25%;
+                                     top: 17%;
+                                     font-size: 70px;
+                                     width: 750px;
+                                    ">Bienvenue en Tunisie</h1>  
+                                <div role="tabpanel" class="tab-pane fade in active" id="search-2" style="   position: absolute;
+                                visibility: visible;
+                                left: 36%;
+
+                                top: 38%;
+                                 width: 750px;">      
+                                    <form  class="search-form" method="post">
+                                       
+                                        <div class="form-group col-sm-4 no-padding" >
+                                            <div class="search-selectpicker selectpicker-wrapper">
+                                                <select class="selectpicker form-control border" data-width="100%" data-toggle="tooltip" name="ville">
+                                                    <option hidden> </option>
+                                                      
+                                                        <option value="Ariana">Ariana</option>
+                                                        <option value="Béja">Béja</option>
+                                                        <option value="Ben Arous">Ben Arous</option>
+                                                        <option value="Bizerte">Bizerte</option>
+                                                        <option value="Gabes">Gabes</option>
+                                                        <option value="Gafsa"> Gafsa</option>
+                                                        <option value="Jendouba">Jendouba</option>
+                                                        <option value="Kairouan">Kairouan</option>
+                                                        <option value="Kasserine">Kasserine</option>
+                                                        <option value="Kebili"> Kebili</option>
+                                                        <option value="La Manouba"> La Manouba</option>
+                                                        <option value="Le Kef">Le Kef</option>
+                                                        <option value="Mahdia">Mahdia</option>
+                                                        <option value="Médenine"> Médenine</option>
+                                                        <option value="Monastir">  Monastir</option>
+                                                        <option value="Nabeul">Nabeul</option>
+                                                        <option value="Sfax">Sfax</option>
+                                                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                                        <option value="Siliana"> Siliana</option>
+                                                        <option value="Sousse">Sousse</option>
+                                                        <option value="Tataouine">Tataouine</option>
+                                                        <option value="Tozeur">Tozeur</option>
+                                                        <option value="Tunis">Tunis</option>
+                                                        <option value="Zaghouan"> Zaghouan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-2 no-padding">                                         
+                                            <button class="form-control"> Rechercher</button>
+                                        </div>                            
+                                    </form>
+                                </div>
+                                
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- / Main-Banner-1 Ends -->   
+
+                <!-- Recommended Start -->
+                <section class="sec-space-top recommended">
+                    <div class="container">
+                        <div class="title-wrap-2 text-center">
+                            <h2 class="section-title"> Destinations recommandées </h2>
+                           
+                        </div>
+                        
+                           
+                        <div class="spotlight-wrap pt-30">
+                            <div class="spotlight-slider owl-carousel">
+                                    <% var i =1 %>
+                                    <% var j =1 %>
+                                    <% monument.forEach(function(element){ %>
+                                        
+                                <div class="item">
+                                    <% j=1 %>
+                                                <% images.forEach(function(img){ %>
+                                                    <% if(j==i) { %>
+                                                    <img alt="" src="/image/<%=img.lien %>" />
+                                                    <% } %>
+                                                    <% j++ %>
+                                              <%  }) %>
+ 
+
+
+                                  
+                                    <div class="info white-color">
+                                        <div class="title-wrap left">
+                                            <h2 class="section-title white-color"> <a href="#"><%= i%>.  <%= element.nom %>    </a> </h2>
+                                            <p class="fw-500 fsz-20">  <%= element.ville %> </p>
+                                        </div>
+                                        <p>
+                                                                                  
+                                        </p>
+                                        <a href="/monument/<%= element._id %>" class="all-show theme-color"> Voir  Détails</a> 
+                                    </div>
+                                 
+                                </div>
+                                <% i++; %>
+                                <%   }) %>
+                            </div>
+                            <a class="customNextBtn rotated-text"> DESTINATION PRECEDENTE </a>
+                            <a class="customPrevBtn rotated-text"> DESTINATION SUIVANTE </a>
+                        </div>
+                        
+                    </div>
+
+                </section>
+                <!-- / Recommended Ends -->                 
+
+                <!-- Travel Video Start -->
+                <section class="travel-video rel-div">
+                    <div class="video-link">
+                        <a class="popup-youtube btn-play fa fa-caret-right theme-color-bg" href="https://www.youtube.com/watch?v=Jh-8fJx-vD0"> </a>
+                        <h2 class="title-2 white-color pt-30">Ouvrir la vidéo</h2>
+                    </div>
+                </section>
+                <!-- / Travel Video Ends -->  
+
+               
+               
+            </article>
+            <!-- / CONTENT AREA -->
+
+            <div id="to-top" class="to-top"> <i class="fa fa-angle-up"></i> </div>
+
+
+        </main>
+        <!-- /WRAPPER -->
+
+
+        <!-- JS Global -->
+        <script src='/assets/b_assets/js/plugin/jquery-2.2.4.min.js'></script>
+        <script src='/assets/b_assets/js/plugin/bootstrap.min.js'></script>
+        <script src='/assets/b_assets/js/plugin/bootstrap-select.min.js'></script>
+        <script src='/assets/b_assets/js/plugin/bootstrap-datepicker.js'></script>
+        <script src='/assets/b_assets/js/plugin/owl.carousel.min.js'></script>
+        <script src="/assets/b_assets/js/plugin/jquery.magnify.js" type="text/javascript"></script>
+
+        <script src='/assets/b_assets/js/plugin/isotope.pkgd.min.js'></script>
+        <script src="/assets/b_assets/js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+
+
+        <!-- Custom JS -->   
+        <script src="/assets/b_assets/js/theme.js" type="text/javascript"></script>
+
+        <!--[if (gte IE 9)|!(IE)]><!-->   
+        <script src="/assets/b_assets/js/jquery.cookie.js"></script> 
+     
+        <!--<![endif]-->
+
+    </body>
+
+<!-- Mirrored from event-theme.com/themes/html/vetrov/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Mar 2018 12:43:47 GMT -->
+</html>

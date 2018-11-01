@@ -1,0 +1,58 @@
+
+
+   <header class="top-bar-2">                   
+        <div class="container">
+            <div class="block-inline">
+              
+                <div class="right" >
+                   
+                    <ul class="top-nav list-items"  >
+                        <% if( !user )  {  %>
+                            <li> <a href="/inscription"> S'inscrire </a> </li>
+                            <li> <a href="/login"> Se connecter </a> </li>
+                            <% } %>
+                            <% if (user) { %>
+                              
+                               <li> <strong style="font-family: Arial;">  Mr/mme   <%= user.name %> </strong> </li>    <li> <a href="/logout"> Se deconnecter</a> </li>
+                             
+                             <% } %>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>                   
+    </header>
+    <!-- / Top Header-1 Ends -->   
+
+    <!-- Main Header-1 Start -->
+    <header class="main-header">
+        <div class="header-fix-wrap header-1" style="    padding: 15px 0;">
+            <div class="container rel-div">
+                <div class="logo">
+                    <a href="/">  <img alt="" src="/assets/b_assets/images/logo/logo-1.png" /> </a>
+                    <span>Tunisia tour</span>
+                </div>                
+                <div class="responsive-toggle fa fa-bars"> </div>
+
+                <!-- Main Header Start -->
+                <div class="menu-bar" style="    padding-top: 18px;">  
+                        <div class="responsive-toggle fa fa-bars"> </div>
+                        <nav id="primary-navigation">            
+                            <ul class="primary-navbar">  
+                                <li><a href="/">Accueil</a> </li>                     
+                          
+                                  <li>
+                                    <a href="/gallerie">Gallerie </a>
+                                    
+                                </li>
+                                <li><a href="/contact">Contactez-nous</a> <div class="bubble"> <span class="green-tag">Aide!</span> </div></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                
+                <!-- / Main Header Ends -->   
+            </div>
+        </div>
+    </header>
+ 

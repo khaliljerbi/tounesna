@@ -1,0 +1,30 @@
+/*----------------------------------Theme Colors Starts-------------------------------- */
+
+/* Color */
+.theme-color, a:hover, a:focus, .main-slider-1 .search-tabs a:hover, .main-slider-1 .search-tabs .active a, .white-color a.theme-color,
+.primary-navbar > li.active > a, .main-slider-1 .search-tabs a:hover span, .main-slider-1 .search-tabs .active a span, .main-banner-1 .search-tabs .active a,
+.btn.focus, .btn:focus, .btn:hover, .current a, .detail-tabs .list-inline > li.active a, .tab-holder .tab-pane h3 a.collapsed:after,
+ul.list-caret li:before, .search-form button.form-control:hover {color: #fcb100;}
+
+
+/* Background Color */
+.boxLoading::after,
+.theme-color-bg, .theme-btn, .primary-navbar > li .dropdown-menu > li a:hover, .mega-dropdown-menu .title-2::after,  
+.dots-1 .owl-dot.active > span, .dots-1 .owl-dot:hover > span, 
+.social-icons-1 > li a:hover, .social-icons-1 > li a:focus, .social-icons-2 > li a:hover, .social-icons-2 > li a:focus, 
+.theme-tabs-1 > li a:hover, .theme-tabs-1 > li.active a, .dots-2 .owl-dot.active > span,
+.main-banner-1 .search-tabs .active .icon, .main-banner-1 .search-tabs .active a::before, 
+.slider-wrap .search-tabs .active .icon, .slider-wrap .search-tabs .active a::before, .widget-deal .title-2::after,
+.filtrable a:hover:before, .filtrable .current a:before, .tab-holder .list-inline .active a::before {background-color: #fcb100;}
+
+.thumbnails .thumbnail .caption.hovered {background-color: rgba(252, 177, 0, 0.7);}
+.feature-2 .info {background-color: rgba(252, 177, 0, 0.8);}
+
+/* Border Color */
+.primary-navbar > li > .dropdown-menu, 
+.social-icons-1 > li a:hover, .social-icons-1 > li a:focus, .social-icons-2 > li a:hover, .social-icons-2 > li a:focus, 
+.testimonials-thumb .synced .item, .testimonials-thumb .item:hover, .promotion  .navigation img:hover, .promotion  .navigation .synced img,
+.main-banner-1 .search-tabs .active .icon, .slider-wrap .search-tabs .active .icon, .detail-tabs .list-inline > li:hover, .detail-tabs .list-inline > li.active {border-color: #fcb100;}
+
+
+/*------------------------Theme Colors Ends------------------------ */
